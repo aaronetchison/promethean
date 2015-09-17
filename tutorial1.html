@@ -40,20 +40,21 @@ function MM_swapImage() { //v3.0
 
 </head>
 <body>
-<div class="container">
+<div class="container content-bg">
 	<header class="sixteen columns">
-		<img src="images/header.jpg" alt="Promethean" />
+		<div class="logo"><h1>Promethean</h1></div>
 
-		<nav><!-- navigation bar -->
-			<div class="btn"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnhome','','images/btnover1.jpg',1)"><img src="images/btnup1.jpg" alt="Home" name="btnhome" width="143" height="35" border="0" id="btnhome" /></a></div>
-		    <div class="btn"><a href="critiques.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btncritiques','','images/btnover2.jpg',1)"><img src="images/btnup2.jpg" alt="Critiques" name="btncritiques" width="144" height="35" border="0" id="btncritiques" /></a></div>
-		   	<div class="btn"><a href="gallery.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btngallery','','images/btnover3.jpg',1)"><img src="images/btnup3.jpg" alt="Gallery" name="btngallery" width="143" height="35" border="0" id="btngallery" /></a></div>
-		    <div class="btn"><a href="tutorials.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btntutorials','','images/btnover4.jpg',1)"><img src="images/btnup4.jpg" alt="Tutorials" name="btntutorials" width="143" height="35" border="0" id="btntutorials" /></a></div>
-		    <div class="btn"><a href="contests.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btncontests','','images/btnover5.jpg',1)"><img src="images/btnup5.jpg" alt="Contests" name="btncontests" width="144" height="35" border="0" id="btncontests" /></a></div>
-		    <div class="btn"><a href="aboutus.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnaboutus','','images/btnover6.jpg',1)"><img src="images/btnup6.jpg" alt="About Us" name="btnaboutus" width="143" height="35" border="0" id="btnaboutus" /></a></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="critiques.html">Critiques</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="contests.html">Contests</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+			</ul>
 		</nav>
 	</header>
-</div>
 
 <table><!-- begin content -->
 <tr>
@@ -148,14 +149,13 @@ function MM_swapImage() { //v3.0
 </tr>
 </table><!-- end content -->
 
-<div id="footer"><!-- begin footer -->
-	<a href="privacypolicy.html"><span style="word-spacing: 0px">Privacy Policy</span></a>
-	<a href="termsofuse.html"><span style="word-spacing: 0px">Terms of Use</span></a>
-	<a href="contactus.html"><span style="word-spacing: 0px">Contact Us</span></a>
-</div>
-<div id="footer2">
-	<p style="margin-top: 40px;"><span style="word-spacing: 0px;">Copyright &copy; 2010, Aaron Etchison</span></p>
-</div><!-- end footer -->
+	<footer class="sixteen columns"><!-- begin footer -->
+		<a href="privacypolicy.html">Privacy Policy</a>
+		<a href="termsofuse.html">Terms of Use</a>
+		<a href="contactus.html">Contact Us</a>
 
+		<p>Copyright &copy; 2010, <a href="http://www.aaronetchison.com">Aaron Etchison</a></p>
+	</footer>
+</div>
 </body>
 </html>
