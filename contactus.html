@@ -81,27 +81,24 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
     </nav>
   </header>
 
-<table style="height: 500px;"><!-- begin content -->
-<tr>
-<td colspan="2" style="margin-left: auto; margin-right: auto;">
-	<h1>Contact Us</h1>
+<div class="ten columns">
+
+	<h2>Contact Us</h2>
 	
 	<div style="margin-left: 200px;">
 	<form method="post" action="#">
-    <h2>Name:</h2>
+    <h3>Name:</h3>
 	<p><input name="Name" type="text" id="Name" maxlength="50" /></p>
-	<h2>E-mail Address:</h2>
+	<h3>E-mail Address:</h3>
 	<p><input name="E-mail Address" type="text" id="E-mail Address" maxlength="50" /></p>
-	<h2>Message:</h2>
+	<h3>Message:</h3>
     	<p><textarea name="Message" cols="50" rows="10" id="Message"></textarea></p>
     	<p>
     	  <input name="submit" type="submit" enabled onclick="MM_validateForm('Name','','R','E-mail Address','','RisEmail','Message','','R');MM_setTextOfTextfield('Name','','');MM_setTextOfTextfield('E-mail Address','','');MM_setTextOfTextfield('Message','','');MM_openBrWindow('thankyou.html','','width=400,height=400');return document.MM_returnValue" value="Sumbit" />
     	</p>
     </form>
 	</div>
-</td>
-</tr>
-</table><!-- end content-->
+</div>
 
   <footer class="sixteen columns"><!-- begin footer -->
     <a href="privacypolicy.html">Privacy Policy</a>
