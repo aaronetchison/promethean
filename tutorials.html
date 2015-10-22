@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
 
 <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
 
-<link href="stylesheets/global.css" rel="stylesheet" type="text/css" /><!-- load main css -->
-
-<link rel="icon" href="images/icon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=Righteous|Muli' rel='stylesheet' type='text/css'>
+<link href="stylesheets/global.css" rel="stylesheet" type="text/css"><!-- load main css -->
 
 <!-- load scripts -->
 <script type="text/javascript">
@@ -39,9 +39,7 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 <body>
-<div class="container">
-	<header class="sixteen columns">
-
+	<header>
     <nav id="nav-wrap" role="navigation">
       <ul id="nav-menu">
 				<li><a href="index.html">Home</a></li>
@@ -53,6 +51,11 @@ function MM_swapImage() { //v3.0
 			</ul>
 		</nav>
 	</header>
+
+
+<div class="hero">
+	<h2>Promethean</h2>
+	<p>Information about this site</p>
 </div>
 
 <div class="container main-content">
@@ -60,63 +63,78 @@ function MM_swapImage() { //v3.0
 
 	<h2>Newest Tutorials</h2>
 
-	<img src="images/th_tut1.jpg" class="thumbnail" alt="Engraved Text" />
-	<h3><a href="tutorial1.html">Text Cutouts With Masks</a></h3>
-	<p>In this tutorial we will show you how to create some effects in Photoshop 
-	with masks to make it look like the text is cut out of the surface.
-	This effect can be applied to any type of texture.</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_tut1.jpg" class="thumbnail" alt="Engraved Text" />
+		<h3><a href="tutorial1.html">Text Cutouts With Masks</a></h3>
+		<p>In this tutorial we will show you how to create some effects in Photoshop 
+		with masks to make it look like the text is cut out of the surface.
+		This effect can be applied to any type of texture.</p>
+	</div>
 
-	<img src="images/th_bloody.jpg" class="thumbnail" alt="3D Text Effects" />
-	<h3>3D Text Effects</h3>
-	<p>In this tutorial we will show you how to create some 3D text 
-	effects using masks, the brush tool and several other techniques 
-	in Photoshop. The example we will be showing you is great for Halloween designs.</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_bloody.jpg" class="thumbnail" alt="3D Text Effects" />
+		<h3>3D Text Effects</h3>
+		<p>In this tutorial we will show you how to create some 3D text 
+		effects using masks, the brush tool and several other techniques 
+		in Photoshop. The example we will be showing you is great for Halloween designs.</p>
+	</div>
 
-	<img src="images/th_texture.jpg" class="thumbnail" alt="Metallic Texture" />
-	<h3>Metallic Texture</h3>	
-	<p>In this tutorial we will show you how to create a metallic texture 
-	using embossing and other effects in Photoshop.
-	These techniques can also be used with other patterns
-	to create several types of textures.</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_texture.jpg" class="thumbnail" alt="Metallic Texture" />
+		<h3>Metallic Texture</h3>	
+		<p>In this tutorial we will show you how to create a metallic texture 
+		using embossing and other effects in Photoshop.
+		These techniques can also be used with other patterns
+		to create several types of textures.</p>
+	</div>
 
-	<img src="images/th_button.jpg" class="thumbnail" alt="3D Nav Button" />
-	<h3>3D Navigation Buttons</h3>	
-	<p>In this tutorial we will show you some techniques to create
-	3D navigational buttons for Web sites using Photoshop. We will show
-	you some metallic and glass techniques using gradients and
-	transparency. 
-	</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_button.jpg" class="thumbnail" alt="3D Nav Button" />
+		<h3>3D Navigation Buttons</h3>	
+		<p>In this tutorial we will show you some techniques to create
+		3D navigational buttons for Web sites using Photoshop. We will show
+		you some metallic and glass techniques using gradients and
+		transparency.</p>
+	</div>
 
-	<img src="images/th_jesus.jpg" class="thumbnail" alt="Jesus Color Effects" />
-	<h3>Color Effects</h3>	
-	<p>In this tutorial we will show you how to accomplish some
-	easy coloring and background techniques in Photoshop.
-	We will be using Levels, Hue/Saturation, transparency, masks
-	and effects.  
-	</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_jesus.jpg" class="thumbnail" alt="Jesus Color Effects" />
+		<h3>Color Effects</h3>	
+		<p>In this tutorial we will show you how to accomplish some
+		easy coloring and background techniques in Photoshop.
+		We will be using Levels, Hue/Saturation, transparency, masks
+		and effects.</p>
+	</div>
 
-	<img src="images/th_pitt.jpg" class="thumbnail" alt="Pitt 3D Text Effects" />
-	<h3>3D Text Effects</h3>	
-	<p>In this tutorial we will show you how to create some 3D text 
-	effects using masks, the brush tool and several other techniques in Photoshop.</p><br />
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_pitt.jpg" class="thumbnail" alt="Pitt 3D Text Effects" />
+		<h3>3D Text Effects</h3>	
+		<p>In this tutorial we will show you how to create some 3D text 
+		effects using masks, the brush tool and several other techniques in Photoshop.</p>
+	</div>
 </div>
 
 <div class="six columns">
 
 	<h2>Popular Tuts</h2>
+	
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_pitt.jpg" class="thumbnail" alt="Pitt 3D Text Effects" />
+		<h3>3D Effects</h3>
+		<p>Engraved text effects in Photoshop.</p>
+	</div>
 
-	<img src="images/th_pitt.jpg" class="thumbnail" alt="Pitt 3D Text Effects" />
-	<h3>3D Effects</h3>
-	<p>Engraved text effects in Photoshop.</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_jesus.jpg" class="thumbnail" alt="Jesus Color Styles" />
+		<h3>Color Styles</h3>
+		<p>Easy color effects in Photoshop.</p>
+	</div>
 
-	<img src="images/th_jesus.jpg" class="thumbnail" alt="Jesus Color Styles" />
-	<h3>Color Styles</h3>
-	<p>Easy color effects in Photoshop.</p>
-
-	<img src="images/th_texture.jpg" class="thumbnail" alt="Metallic Texture" />
-	<h3>3D Textures</h3>
-	<p>3D texture effects in Photoshop..</p>
-
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_texture.jpg" class="thumbnail" alt="Metallic Texture" />
+		<h3>3D Textures</h3>
+		<p>3D texture effects in Photoshop..</p>
+	</div>
 </div><!-- end sidebar -->
 
 	<footer class="sixteen columns"><!-- begin footer -->

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
 
 <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
 
-<link href="stylesheets/global.css" rel="stylesheet" type="text/css" /><!-- load main css -->
-
-<link rel="icon" href="images/icon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=Righteous|Muli' rel='stylesheet' type='text/css'>
+<link href="stylesheets/global.css" rel="stylesheet" type="text/css"><!-- load main css -->
 
 <!-- load scripts -->
 <script type="text/javascript">
@@ -40,9 +40,7 @@ function MM_swapImage() { //v3.0
 
 </head>
 <body>
-<div class="container">
-	<header class="sixteen columns">
-
+	<header>
     <nav id="nav-wrap" role="navigation">
       <ul id="nav-menu">
 				<li><a href="index.html">Home</a></li>
@@ -54,6 +52,11 @@ function MM_swapImage() { //v3.0
 			</ul>
 		</nav>
 	</header>
+
+
+<div class="hero">
+	<h2>Promethean</h2>
+	<p>Information about this site</p>
 </div>
 
 <div class="container main-content">
@@ -116,18 +119,23 @@ function MM_swapImage() { //v3.0
 
 	<h2>Similar Tuts</h2>
 
-	<img src="images/th_bloody.jpg" class="thumbnail" alt="Bloody 3D Text" />
-	<h3>3D Text</h3>
-	<p>Learn to create 3D text effects and backgrounds in Photoshop.</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_bloody.jpg" class="thumbnail" alt="Bloody 3D Text" />
+		<h3>3D Text</h3>
+		<p>Learn to create 3D text effects and backgrounds in Photoshop.</p>
+	</div>
 
-	<img src="images/th_button.jpg" class="thumbnail" alt="3D Nav Button" />
-	<h3>3D Button</h3>
-	<p>Create great 3D Web navigation buttons in Photoshop.</p>
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_button.jpg" class="thumbnail" alt="3D Nav Button" />
+		<h3>3D Button</h3>
+		<p>Create great 3D Web navigation buttons in Photoshop.</p>
+	</div>
 
-	<img src="images/th_texture.jpg" class="thumbnail" alt="Metallic Texture" />
-	<h3>3D Texture</h3>
-	<p>Learn some techniques to create simple 3D textures in Photoshop.</p>
-
+	<div class="teaser">
+		<img class="thumbnail" src="images/th_texture.jpg" class="thumbnail" alt="Metallic Texture" />
+		<h3>3D Texture</h3>
+		<p>Learn some techniques to create simple 3D textures in Photoshop.</p>
+	</div>
 </div><!-- end sidebar -->
 
 	<footer class="sixteen columns"><!-- begin footer -->

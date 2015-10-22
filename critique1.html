@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
 
 <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="images/icon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
 
-<link href="stylesheets/global.css" rel="stylesheet" type="text/css" /><!-- load main css -->
-
-<link rel="icon" href="images/icon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=Righteous|Muli' rel='stylesheet' type='text/css'>
+<link href="stylesheets/global.css" rel="stylesheet" type="text/css"><!-- load main css -->
 <!-- load scripts -->
 <script type="text/javascript">
 <!--
@@ -39,9 +39,7 @@ function MM_swapImage() { //v3.0
 
 </head>
 <body>
-<div class="container">
-	<header class="sixteen columns">
-
+	<header>
     <nav id="nav-wrap" role="navigation">
       <ul id="nav-menu">
 				<li><a href="index.html">Home</a></li>
@@ -53,6 +51,11 @@ function MM_swapImage() { //v3.0
 			</ul>
 		</nav>
 	</header>
+
+
+<div class="hero">
+	<h2>Promethean</h2>
+	<p>Information about this site</p>
 </div>
 
 <div class="container main-content">
@@ -94,19 +97,24 @@ function MM_swapImage() { //v3.0
 	<div class="six columns"><!-- begin sidebar -->
 
 		<h2>Similar Artists</h2>
+		
+		<div class="teaser">
+			<img class="thumbnail" src="images/th_bm2010.jpg" class="thumbnail" alt="Aaron Etchison Art" />
+			<h3>Etchison</h3>
+			<p>Explore the work of this graphic designer and Web developer.</p>
+		</div>
+		
+		<div class="teaser">
+			<img class="thumbnail" src="images/th_glennjones.jpg" class="thumbnail" alt="Glenn Jones Art" />
+			<h3>Jones</h3>
+			<p>Explore the humorous style of this graphic designer and illustrator.</p>
+		</div>
 
-		<img src="images/th_bm2010.jpg" class="thumbnail" alt="Aaron Etchison Art" />
-		<h3>Etchison</h3>
-		<p>Explore the work of this graphic designer and Web developer.</p>
-
-		<img src="images/th_glennjones.jpg" class="thumbnail" alt="Glenn Jones Art" />
-		<h3>Jones</h3>
-		<p>Explore the humorous style of this graphic designer and illustrator.</p>
-
-		<img src="images/th_seveso.jpg" class="thumbnail" alt="Alberto Seveso Art" />
-		<h3>Seveso</h3>
-		<p>Explore the new styles of the Italian illustrator and graphic designer.</p>
-
+		<div class="teaser">
+			<img class="thumbnail" src="images/th_seveso.jpg" class="thumbnail" alt="Alberto Seveso Art" />
+			<h3>Seveso</h3>
+			<p>Explore the new styles of the Italian illustrator and graphic designer.</p>
+		</div>
 	</div><!-- end sidebar -->
 
 	<footer class="sixteen columns"><!-- begin footer -->
