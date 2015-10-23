@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <link rel="icon" href="images/icon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
 
@@ -39,24 +41,37 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 <body>
-	<header>
-    <nav id="nav-wrap" role="navigation">
-      <ul id="nav-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="critiques.html">Critiques</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
-				<li><a href="contests.html">Contests</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-			</ul>
-		</nav>
-	</header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><div class="brand-logo"></div><span class="brand-name">Promethean</span></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">Home</a></li>
+					<li><a href="critiques.html">Critiques</a></li>
+					<li><a href="tutorials.html">Tutorials</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contests.html">Contests</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-
-<div class="hero">
-	<h2>Promethean</h2>
-	<p>Information about this site</p>
-</div>
+  <div class="jumbotron hero-home">
+    <div class="container">
+			<h2>Promethean</h2>
+			<p>Information about this site</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
 
 <div class="container main-content">
 <div class="ten columns">
@@ -146,6 +161,7 @@ function MM_swapImage() { //v3.0
 	</footer>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
