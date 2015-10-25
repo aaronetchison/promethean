@@ -418,16 +418,14 @@
 
       &:hover,
       &:focus {
-        color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
+        color: $navbar-default-link-color;
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
+        color: $navbar-default-link-color;
       }
     }
     > .disabled > a {
