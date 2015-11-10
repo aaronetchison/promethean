@@ -4,9 +4,9 @@
 
 
 .jumbotron {
-  padding-top:    $jumbotron-padding;
-  padding-bottom: $jumbotron-padding;
-  margin-bottom: $jumbotron-padding;
+  padding-top:    0;
+  padding-bottom: 0;
+  margin-bottom: 0;
   color: $jumbotron-color;
   background-color: $jumbotron-bg;
 
@@ -35,8 +35,8 @@
   }
 
   @media screen and (min-width: $screen-sm-min) {
-    padding-top:    ($jumbotron-padding * 1.6);
-    padding-bottom: ($jumbotron-padding * 1.6);
+    padding-top:    0;
+    padding-bottom: 0;
 
     .container &,
     .container-fluid & {

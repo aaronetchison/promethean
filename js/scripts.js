@@ -1,12 +1,13 @@
 jQuery(document).ready(function($) {
-    /* prepend menu icon */
-    $('#nav-wrap').prepend('<div id="menu-icon"><div class="logo"></div><h2 class="button">Promethean</h2></div>');
-    
-    /* toggle nav */
-    $("#menu-icon").on("click", function(){
-        $("#nav-menu").slideToggle();
-        $(this).toggleClass("active");
+
+    $('.owl-carousel').owlCarousel({
+        items : 1,
+        itemsDesktop : [1280,1],
+        itemsDesktopSmall : [980,1],
+        itemsTablet: [768,1],
+        itemsTabletSmall: false,
+        itemsMobile : [479,1],
+        autoPlay : 9999,
+        stopOnHover : true,
     });
-
-
 });

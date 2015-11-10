@@ -22,7 +22,10 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 $red: #A00D03;
+$orange: #D52901;
 $black: #000000;
+$white: #FFFFFF;
+$light-gray: #CCCCCC;
 $hfont: 'Righteous';
 $pfont: 'Muli';
 
@@ -39,7 +42,7 @@ $text-color:            $gray-dark !default;
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      $orange;
 //** Link hover decoration.
 $link-hover-decoration: none;
 
@@ -380,16 +383,16 @@ $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
 $navbar-default-link-color:                $brand-primary;
-$navbar-default-link-hover-color:          #fff;
-$navbar-default-link-hover-bg:             $brand-primary;
-$navbar-default-link-active-color:         #fff;
-$navbar-default-link-active-bg:            $brand-primary;
+$navbar-default-link-hover-color:          $orange;
+$navbar-default-link-hover-bg:             $white;
+$navbar-default-link-active-color:         $brand-primary;
+$navbar-default-link-active-bg:            $white;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-default-brand-color:               $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-brand-hover-color:         $orange;
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -496,7 +499,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 
 $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-bg:                   $white;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
