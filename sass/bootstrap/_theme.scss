@@ -45,22 +45,24 @@
 }
 
 // Mixin for generating new styles
-@mixin btn-styles($btn-color: #555) {
+@mixin btn-styles($btn-color: $white) {
   @include gradient-vertical($start-color: $btn-color, $end-color: darken($btn-color, 12%));
   @include reset-filter; // Disable gradients for IE9 because filter bleeds through rounded corners; see https://github.com/twbs/bootstrap/issues/10620
   background-repeat: repeat-x;
-  border-color: darken($btn-color, 14%);
+  border-color: $red;
 
   &:hover,
   &:focus  {
-    background-color: darken($btn-color, 12%);
+    color: $orange;
+    background-color: $orange;
     background-position: 0 -15px;
+    background-color: $white;
   }
 
   &:active,
   &.active {
-    background-color: darken($btn-color, 12%);
-    border-color: darken($btn-color, 14%);
+    background-color: $white;
+    border-color: $orange;
   }
 
   &.disabled,
@@ -72,7 +74,7 @@
     &.focus,
     &:active,
     &.active {
-      background-color: darken($btn-color, 12%);
+      background-color: $white;
       background-image: none;
     }
   }
@@ -88,7 +90,7 @@
 }
 
 // Apply the mixin to the buttons
-.btn-default { @include btn-styles($btn-default-bg); text-shadow: 0 1px 0 #fff; border-color: #ccc; }
+.btn-default { @include btn-styles($btn-default-bg); text-shadow: 0 1px 0 $white; border-color: $red; }
 .btn-primary { @include btn-styles($btn-primary-bg); }
 .btn-success { @include btn-styles($btn-success-bg); }
 .btn-info    { @include btn-styles($btn-info-bg); }

@@ -401,10 +401,26 @@
 
   .navbar-brand {
     color: $navbar-default-brand-color;
+    line-height: 32px;
+
+    .brand-logo {
+      float: left;
+      width: 32px;
+      height: 32px;
+      margin: 0;
+      padding: 0;
+      background: url("../images/logo-promethean.png") center no-repeat;
+      background-size: cover;
+    }
+    
     &:hover,
     &:focus {
       color: $navbar-default-brand-hover-color;
       background-color: $navbar-default-brand-hover-bg;
+
+      .brand-logo {
+          background: url("../images/logo-promethean-hover.png") center no-repeat;
+      }
     }
   }
 
@@ -445,13 +461,18 @@
   }
 
   .navbar-toggle {
-    border-color: $navbar-default-toggle-border-color;
+    border: 2px solid $navbar-default-toggle-border-color;
     &:hover,
     &:focus {
       background-color: $navbar-default-toggle-hover-bg;
+      border-color: $orange;
     }
     .icon-bar {
       background-color: $navbar-default-toggle-icon-bar-bg;
+      &:hover,
+      &:focus {
+        background-color: $orange;
+      }
     }
   }
 
