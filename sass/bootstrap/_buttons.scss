@@ -15,7 +15,7 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 2px solid $red;
+  border: 2px solid $light-gray;
   white-space: nowrap;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
   @include user-select(none);
@@ -32,9 +32,9 @@
   &:hover,
   &:focus,
   &.focus {
-    color: $orange;
+    color: $light-gray;
     text-decoration: none;
-    border-color: $orange;
+    border-color: $light-gray;
   }
 
   &:active,

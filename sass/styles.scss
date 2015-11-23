@@ -17,7 +17,7 @@ $pfont: 'Muli';
 }
 
 body {
-	background-color: $white;
+	background-color: #f8f8f8;
 	font-size: 16px;
 }
 
@@ -58,6 +58,7 @@ footer {
 	color: $red;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color: $white;
 	}
 
 footer a {
@@ -101,9 +102,14 @@ h2 {
 	}
 
 .main-content h2 {
-	margin-top: 20px;
-	margin-bottom: 10px;
-	border-bottom: 2px solid $red;
+	margin-bottom: 20px;
+	padding: 10px;
+	background: linear-gradient(to right, rgba(0,0,0,.1), rgba(0,0,0,0) );
+	border-radius: 4px;
+}
+
+.row > h2 {
+	margin-left: 10px;
 }
 
 h3 {
@@ -112,7 +118,7 @@ h3 {
 	font-family: $hfont, Verdana, sans-serif;
 	font-size: 1.2em;
 	color: $red;
-	}
+}
 
 p, li {
 	margin-top: 0;
@@ -133,24 +139,28 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: $orange;
+a:hover, a:focus {
+	color: $light-gray;
 }
 
-a:active, a:visited {
+.teaser a:visited, .teaser a:active {
+	color: $light-gray;
+}
+
+.teaser a:visited:hover {
 	color: $red;
 }
 
 /*Content Styles*/
+
 .teaser {
 	position: relative;
-	width: 100%;
 	min-height: 160px;
-	margin-bottom: 5px;
-	padding: 10px;
-	border-bottom: 2px solid $light-gray;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 4px inset $light-gray;
 
-	&:last-child {
+	.teaser:last-child {
 		border-bottom: none;
 	}
 
@@ -164,11 +174,13 @@ a:active, a:visited {
 		margin-bottom: 1.5em;
 		overflow: hidden;
 	}
+
 	.thumbnail {
 		float: left;
 		width: auto;
-		min-height: 135px;
+		min-height: 135px; /* REMOVE THIS AFTER ADDING CONTENT */
 		margin-right: 10px;
+		margin-bottom: 10px;
 	}
 
 	p + a {
@@ -179,6 +191,33 @@ a:active, a:visited {
 
 }
 
+.col-md-8.teaser {
+	width: 100%;
+	border-bottom: 4px inset $light-gray;
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	.thumbnail {
+		float: left;
+		width: auto;
+		margin-right: 10px;
+	}
+}
+
+.col-md-3.teaser {
+	padding: 10px;
+	border-bottom: none;
+
+	.thumbnail {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
+
 .sidebar .teaser {
 
 	.thumbnail {
@@ -186,6 +225,19 @@ a:active, a:visited {
 		width: 100%;
 		height: auto;
 		margin-right: 0;
+	}
+}
+
+.sidebar .ad {
+	width: 100%;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 4px inset $light-gray;
+
+	img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
 	}
 }
 
@@ -244,6 +296,33 @@ a:active, a:visited {
 	height: 40px;
 	width: 40px;
 	}
+
+/* Search Form */
+
+.search-form {
+	margin-bottom: 20px;
+
+	.search-button {
+		float: left;
+		max-width: 100px;
+		height: 48px;
+		font-family: $pfont, arial, sans-serif;
+		font-size: 1.2em;
+		color: $red;
+		text-align: center;
+		border: 2px solid $light-gray;
+	}
+
+	.search-field {
+		clear: left;
+		height: 48px;
+		font-family: $pfont, arial, sans-serif;
+		font-size: 1.2em;
+		color: $black;
+		border: 2px solid $light-gray;
+	}
+
+}
 	
 
 @media all and (min-width: 0) and (max-width: 480px) {

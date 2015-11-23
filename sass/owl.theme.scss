@@ -5,6 +5,7 @@
 
 .owl-theme .owl-controls{
 	text-align: center;
+	background-color: #F8F8F8;
 }
 
 /* Styling Next and Prev buttons */
@@ -20,12 +21,12 @@
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	background: $red;
+	background: $light-gray;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	background: $orange;
+	background: $red;
 	text-decoration: none;
 }
 
@@ -43,12 +44,12 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: $red;
+	background: $light-gray;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-	background: $orange;
+	background: $red;
 }
 
 /* If PaginationNumbers is true */

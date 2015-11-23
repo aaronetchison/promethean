@@ -409,7 +409,7 @@
       height: 32px;
       margin: 0;
       padding: 0;
-      background: url("../images/logo-promethean.png") center no-repeat;
+      background: url("../images/icons/logo-promethean-hover.svg") center no-repeat;
       background-size: cover;
     }
     
@@ -419,7 +419,7 @@
       background-color: $navbar-default-brand-hover-bg;
 
       .brand-logo {
-          background: url("../images/logo-promethean-hover.png") center no-repeat;
+          background: url("../images/icons/logo-promethean.svg") center no-repeat;
       }
     }
   }
@@ -456,6 +456,37 @@
       &:focus {
         color: $navbar-default-link-disabled-color;
         background-color: $navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+  @media all and (min-width: 0px) and (max-width: 767px) {
+    .navbar-nav {
+      > li > a {
+        height: 48px;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+          border-top: 4px solid rgba(0,0,0,0);
+          background-color: rgba(248,248,248,0.5);
+        }
+      }
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          border-top: 4px solid rgba(0,0,0,0);
+          background-color: rgba(248,248,248,0.5);
+        }
+      }
+      > .disabled > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $navbar-default-link-disabled-color;
+          background-color: $navbar-default-link-disabled-bg;
+        }
       }
     }
   }
