@@ -241,6 +241,12 @@ a:hover, a:focus {
 	}
 }
 
+.tutorial {
+	img {
+		width: 100%;
+	}
+}
+
 
 /* Owl Carousel */
 
@@ -311,21 +317,28 @@ a:hover, a:focus {
 		color: $red;
 		text-align: center;
 		border: 2px solid $light-gray;
+		border-radius: 4px 0 0 4px;
 	}
 
 	.search-field {
 		clear: left;
 		height: 48px;
+		margin-left: -2px;
 		font-family: $pfont, arial, sans-serif;
 		font-size: 1.2em;
 		color: $black;
 		border: 2px solid $light-gray;
+		border-radius: 0 4px 4px 0;
 	}
 
 }
 	
 
 @media all and (min-width: 0) and (max-width: 480px) {
+
+	.brand-name {
+		display: none;
+	}
 
 	.teaser {
 
