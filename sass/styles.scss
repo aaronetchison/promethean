@@ -35,7 +35,6 @@ nav li {
 .jumbotron {
 
 	h2 {
-		padding-top: 10%;
 		font-size: 5em;
 		text-align: center;
 	}
@@ -153,6 +152,11 @@ a:hover, a:focus {
 
 /*Content Styles*/
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .teaser {
 	position: relative;
 	min-height: 160px;
@@ -177,8 +181,6 @@ a:hover, a:focus {
 
 	.thumbnail {
 		float: left;
-		width: auto;
-		min-height: 135px; /* REMOVE THIS AFTER ADDING CONTENT */
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}
@@ -256,8 +258,27 @@ a:hover, a:focus {
 	padding: 5%;
 }
 
+.carousel-copy {
+	width: 50%;
+	height: auto;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 4px;
+}
+
 .hero-article1 {
-	background: url("../images/hero-painting.jpg") no-repeat center;
+	background: url("../images/critiques/creativity-lg.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.hero-article2 {
+	background: url("../images/critiques/aaronetchison-lg.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.hero-article3 {
+	background: url("../images/critiques/abduzeedo-lg.jpg") no-repeat center;
 	background-size: cover;
 }
 
