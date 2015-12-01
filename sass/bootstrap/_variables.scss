@@ -26,7 +26,8 @@ $red: #A00D03;
 $orange: #D52901;
 $black: #333333;
 $white: #FBFBFB;
-$light-gray: #CCCCCC;
+$off-white: #F8F8F8;
+$light-gray: #727272;
 $hfont: 'Righteous';
 $pfont: 'Muli';
 
@@ -378,8 +379,8 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          8px;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #fff;
-$navbar-default-bg:                #fff;
+$navbar-default-color:             $off-white;
+$navbar-default-bg:                $off-white;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
