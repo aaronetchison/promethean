@@ -29,10 +29,14 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Home</a></li>
-					<li><a href="critiques.html">Critiques</a></li>
+          <li><a href="index.html">Home</a></li>
+					<li class="active"><a href="critiques.html">Critiques</a></li>
 					<li><a href="tutorials.html">Tutorials</a></li>
-					<li><a href="contests.html">Contests</a></li>
+					<li>
+	        	<form name="search-form" id="search-form" class="search-form" method="" action="">
+			        <input type="search" name="search-field" id="search-field" class="search-field" placeholder="Search..." >
+			    	</form>
+			  	</li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -41,19 +45,25 @@
   <div class="jumbotron">
 				<div class="owl-carousel">
           <div class="carousel-content hero-article1">
-						<h2>Creativity</h2>
-						<p>Information about this site</p>
-			      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more &raquo;</a></p>
+          	<div class="carousel-copy">
+							<h2>Creativity</h2>
+							<p>Information about this site</p>
+				      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more &raquo;</a></p>
+				     </div>
           </div>
           <div class="carousel-content hero-article2">
-						<h2>Aaron Etchison</h2>
-						<p>Information about this site</p>
-			      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more &raquo;</a></p>
+          	<div class="carousel-copy">
+							<h2>Aaron Etchison</h2>
+							<p>Information about this site</p>
+				      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more &raquo;</a></p>
+				    </div>
           </div>
           <div class="carousel-content hero-article3">
-						<h2>Abduzeedo</h2>
-						<p>Information about this site</p>
-			      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more &raquo;</a></p>
+						<div class="carousel-copy">
+							<h2>Abduzeedo</h2>
+							<p>Information about this site</p>
+				      <p><a class="btn btn-primary btn-lg" href="#" role="button">Read more &raquo;</a></p>
+				    </div>
           </div>
       </div>
   </div>
@@ -123,15 +133,6 @@
 	</div>
 
 	<div class="col-sm-4 sidebar"><!-- begin sidebar-->
-
-    <form  name="contactUs" id="contactUs" class="search-form" method="post" action="email.php">
-
-        <input type="submit" name="submit" id="submit" class="search-button" value="Search" />
-
-        <input type="text" name="name" id="name" class="search-field" />
-
-    </form>
-
 
 		<h2>Popular Critiques</h2>
 		<div class="teaser">
