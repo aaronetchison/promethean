@@ -234,9 +234,10 @@
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
-    line-height: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.2;
+    border-top: 4px solid transparent;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -271,8 +272,8 @@
     > li {
       float: left;
       > a {
-        padding-top:    $navbar-padding-vertical;
-        padding-bottom: $navbar-padding-vertical;
+        padding-top:    8px;
+        padding-bottom: 8px;
       }
     }
   }
@@ -438,7 +439,7 @@
         color: $navbar-default-link-hover-color;
         background-color: transparent;
         line-height: 1.2;
-        border-top: 4px solid $orange;
+        border-top: 4px solid $red;
       }
     }
     > .active > a {
@@ -447,7 +448,7 @@
       &:focus {
         color: $navbar-default-link-color;
         line-height: 1.2;
-        border-top: 4px solid $orange;
+        border-top: 4px solid $red;
       }
     }
     > .disabled > a {
@@ -463,12 +464,13 @@
   @media all and (min-width: 0px) and (max-width: 767px) {
     .navbar-nav {
       > li > a {
+        border-top: none;
         height: 48px;
         text-align: center;
 
         &:hover,
         &:focus {
-          border-top: 4px solid rgba(0,0,0,0);
+          border-top: none;
           background-color: rgba(248,248,248,0.5);
         }
       }
@@ -476,7 +478,7 @@
         &,
         &:hover,
         &:focus {
-          border-top: 4px solid rgba(0,0,0,0);
+          border-top: none;
           background-color: rgba(248,248,248,0.5);
         }
       }
