@@ -159,7 +159,7 @@ img {
 	position: relative;
 	min-height: 160px;
 	margin-bottom: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 1.8em;
 	border-bottom: 1px solid $red;
 
 	.teaser:last-child {
@@ -173,7 +173,7 @@ img {
 
 	p + p {
 		max-height: 90px;
-		margin-bottom: 1.5em;
+		margin-bottom: 1.2em;
 		overflow: hidden;
 	}
 
@@ -377,6 +377,59 @@ img {
 			margin-right: 0;
 			margin-bottom: 10px;
 		}
+	}
+
+	.jumbotron {
+		margin-top: 2em;
+
+		h2 {
+			font-size: 2em;
+		}
+
+		p {
+			font-size: 1em;
+		}
+	}
+
+	.btn-lg {
+		font-size: 1em;
+		padding: 5px 8px;
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+
+	.brand-name {
+		display: none;
+	}
+
+	.teaser {
+
+		.thumbnail {
+			float: none;
+			width: 100%;
+			height: auto;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+
+	.jumbotron {
+
+		margin-top: 1em;
+
+		h2 {
+			font-size: 3em;
+		}
+
+		p {
+			font-size: 1.5em;
+		}
+	}
+
+	.btn-lg {
+		font-size: 1.2em;
+		padding: 7px 12px;
 	}
 }
 
