@@ -42,7 +42,7 @@ nav li {
 
 	p {
 		font-size: 1.5em;
-		color: #FFFFFF;
+		color: $black;
 		text-align: center;
 	}
 }
@@ -124,6 +124,11 @@ p, li {
 	color: $black;
 	}
 
+p.byline {
+	font-size: .8em;
+	color: $light-gray;
+}
+
 hr {
 	width: 860px;
 	color: #ffa300;
@@ -148,6 +153,43 @@ a:hover, a:focus {
 	color: $red;
 }
 
+/*Button Styles*/
+
+.icon-heart {
+	width: 32px;
+	height: 32px;
+	background: url("../images/icons/icon-heart.svg") no-repeat center;
+}
+
+.social-group {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	.button {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+}
+
+.icon-pinterest {
+	width: 32px;
+	height: 32px;
+	background: url("../images/icons/icon-pinterest.svg") no-repeat center;
+}
+
+.icon-twitter {
+	width: 32px;
+	height: 32px;
+	background: url("../images/icons/icon-twitter.svg") no-repeat center;
+}
+
+.icon-facebook {
+	width: 32px;
+	height: 32px;
+	background: url("../images/icons/icon-facebook.svg") no-repeat center;
+}
+
 /*Content Styles*/
 
 img {
@@ -164,11 +206,6 @@ img {
 
 	.teaser:last-child {
 		border-bottom: none;
-	}
-
-	p.byline {
-		font-size: .8em;
-		color: $light-gray;
 	}
 
 	p + p {
@@ -247,6 +284,20 @@ img {
 	}
 }
 
+article {
+	position: relative;
+
+	.icon-heart {
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+
+	h3 {
+		margin-top: 20px;
+	}
+}
+
 
 /* Owl Carousel */
 
@@ -264,18 +315,24 @@ img {
 }
 
 .hero-article1 {
-	background: url("../images/critiques/creativity-lg.jpg") no-repeat center;
-	background-size: cover;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/critiques/creativity-lg.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, center;
+	background-size: cover, cover;
 }
 
 .hero-article2 {
-	background: url("../images/critiques/aaronetchison-lg.jpg") no-repeat center;
-	background-size: cover;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/critiques/aaronetchison-lg.jpg") no-repeat center;
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, center;
+	background-size: cover, cover;
 }
 
 .hero-article3 {
-	background: url("../images/critiques/abduzeedo-lg.jpg") no-repeat center;
-	background-size: cover;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/critiques/abduzeedo-lg.jpg") no-repeat center;
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, center;
+	background-size: cover, cover;
 }
 
 /*JavaScript Styles*/
