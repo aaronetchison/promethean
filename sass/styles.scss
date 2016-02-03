@@ -162,12 +162,10 @@ a:hover, a:focus {
 }
 
 .social-group {
-	margin-top: 10px;
-	margin-bottom: 10px;
 	
 	.button {
 		display: inline-block;
-		margin-right: 10px;
+		margin-right: 16px;
 	}
 
 }
@@ -269,7 +267,7 @@ img {
 	width: 100%;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
-	border-bottom: 4px inset $light-gray;
+	border-bottom: 1px solid $red;
 
 	img {
 		width: 100%;
@@ -286,11 +284,18 @@ img {
 
 article {
 	position: relative;
+	padding-bottom: 64px;
+
+	.social-group {
+		position: absolute;
+		bottom: 16px;
+		left: 16px;
+	}
 
 	.icon-heart {
 		position: absolute;
-		top: 0;
-		right: 10px;
+		bottom: 16px;
+		right: 16px;
 	}
 
 	h3 {
@@ -455,10 +460,6 @@ article {
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
-
-	.brand-name {
-		display: none;
-	}
 
 	.teaser {
 

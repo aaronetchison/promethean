@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-<path fill="#3B5998" d="M12.63,31.88V17.39H7.75v-5.65h4.88V7.58c0-4.83,2.95-7.46,7.26-7.46c2.06,0,3.84,0.15,4.36,0.22v5.05
-	l-2.99,0c-2.34,0-2.8,1.11-2.8,2.75v3.6h5.59l-0.73,5.65h-4.86v14.49H12.63z"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="Layer_1">
+	<path fill="#3B5998" d="M31,0H1C0.45,0,0,0.45,0,1v30c0,0.55,0.45,1,1,1h15V20h-4v-5h4v-3.79c0-4.13,2.56-6.39,6.24-6.39
+		c1.76,0,3.76,0.13,3.76,0.19V9h-2.2c-2.01,0-2.8,1.29-2.8,2.69V15h5.19l-0.62,5H21v12h10c0.55,0,1-0.45,1-1V1C32,0.45,31.55,0,31,0
+		z"/>
+</g>
+<g id="Layer_2" display="none">
+	
+		<image display="inline" overflow="visible" opacity="0.5" width="50" height="50" xlink:href="../../../Resources_Design/facebook-logos-and-badges_f-logo_online/logos-and-badges_f-logo_online/png/FB-f-Logo__blue_50.png"  transform="matrix(0.64 0 0 0.64 0 0)">
+	</image>
+</g>
 </svg>
