@@ -202,10 +202,6 @@ img {
 	padding-bottom: 1.8em;
 	border-bottom: 1px solid $red;
 
-	.teaser:last-child {
-		border-bottom: none;
-	}
-
 	p + p {
 		max-height: 90px;
 		margin-bottom: 1.2em;
@@ -213,7 +209,6 @@ img {
 	}
 
 	.thumbnail {
-		float: left;
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}
@@ -226,9 +221,11 @@ img {
 
 }
 
-.col-md-8.teaser {
-	width: 100%;
-	border-bottom: 4px inset $light-gray;
+.col-sm-8 {
+
+	.teaser {
+		min-height: 200px;
+	}
 
 	&:last-child {
 		border-bottom: none;
@@ -236,7 +233,7 @@ img {
 
 	.thumbnail {
 		float: left;
-		width: auto;
+		width: 33%;
 		margin-right: 10px;
 	}
 }
@@ -503,4 +500,5 @@ article {
 			margin-bottom: 10px;
 		}
 	}
+
 }

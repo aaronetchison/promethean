@@ -463,6 +463,8 @@
 
   @media all and (min-width: 0px) and (max-width: 767px) {
     .navbar-nav {
+      padding-bottom: 16px;
+
       > li > a {
         border-top: none;
         height: 48px;
