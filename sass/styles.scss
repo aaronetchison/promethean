@@ -209,7 +209,10 @@ img {
 	}
 
 	.thumbnail {
-		margin-right: 10px;
+		float: none;
+		width: 100%;
+		height: auto;
+		margin-right: 0;
 		margin-bottom: 10px;
 	}
 
@@ -218,7 +221,6 @@ img {
 		bottom: 5px;
 		right: 10px;
 	}
-
 }
 
 .col-sm-8 {
@@ -234,29 +236,8 @@ img {
 	.thumbnail {
 		float: left;
 		width: 33%;
+		min-width: 240px;
 		margin-right: 10px;
-	}
-}
-
-.col-md-3.teaser {
-	padding: 10px;
-	border-bottom: none;
-
-	.thumbnail {
-		float: none;
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: 10px;
-	}
-}
-
-.sidebar .teaser {
-
-	.thumbnail {
-		float: none;
-		width: 100%;
-		height: auto;
-		margin-right: 0;
 	}
 }
 
@@ -305,36 +286,38 @@ article {
 
 .carousel-content {
 	width: 100%;
-	height: 100%;
-	padding: 5%;
+	min-height: 480px;
+	padding: 32px 0;
 }
 
 .carousel-copy {
-	height: auto;
-	margin: 20px auto;
-	padding: 10px;
-	border-radius: 4px;
+	max-width: 420px;
+	height: 420px;
+	margin: 20px auto 0 auto;
+	padding-top: 100px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); 
+	border-radius: 420px;
 }
 
 .hero-article1 {
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/critiques/creativity-lg.jpg");
-	background-repeat: no-repeat, no-repeat;
-	background-position: center, center;
-	background-size: cover, cover;
+	background-image:url("../images/critiques/creativity-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-article2 {
-	background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/critiques/aaronetchison-lg.jpg") no-repeat center;
-	background-repeat: no-repeat, no-repeat;
-	background-position: center, center;
-	background-size: cover, cover;
+	background-image: url("../images/critiques/aaronetchison-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-article3 {
-	background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/critiques/abduzeedo-lg.jpg") no-repeat center;
-	background-repeat: no-repeat, no-repeat;
-	background-position: center, center;
-	background-size: cover, cover;
+	background-image: url("../images/critiques/abduzeedo-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 /*JavaScript Styles*/
@@ -427,17 +410,6 @@ article {
 		display: none;
 	}
 
-	.teaser {
-
-		.thumbnail {
-			float: none;
-			width: 100%;
-			height: auto;
-			margin-right: 0;
-			margin-bottom: 10px;
-		}
-	}
-
 	.jumbotron {
 		margin-top: 2em;
 
@@ -454,20 +426,19 @@ article {
 		font-size: 1em;
 		padding: 5px 8px;
 	}
-}
 
-@media all and (min-width: 481px) and (max-width: 768px) {
-
-	.teaser {
+	.col-sm-8 {
 
 		.thumbnail {
 			float: none;
 			width: 100%;
-			height: auto;
 			margin-right: 0;
 			margin-bottom: 10px;
 		}
 	}
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
 
 	.jumbotron {
 
@@ -486,19 +457,18 @@ article {
 		font-size: 1.2em;
 		padding: 7px 12px;
 	}
-}
 
-@media all and (min-width: 769px) and (max-width: 991px) {
-
-	.teaser {
+	.col-sm-8 {
 
 		.thumbnail {
-			float: none;
-			width: 100%;
-			height: auto;
-			margin-right: 0;
-			margin-bottom: 10px;
+			width: 50%;
+			max-width: 240px;
 		}
 	}
+
+}
+
+@media all and (min-width: 769px) and (max-width: 992px) {
+
 
 }
