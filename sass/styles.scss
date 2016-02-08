@@ -36,6 +36,7 @@ nav li {
 .jumbotron {
 
 	h2 {
+		margin-bottom: 20px;
 		font-size: 3.6em;
 		color: $red;
 		text-align: center;
@@ -292,17 +293,17 @@ article {
 .carousel-content {
 	width: 100%;
 	min-height: 480px;
-	padding: 32px 0;
+	padding: 120px 10px;
 }
 
 .carousel-copy {
-	max-width: 420px;
-	height: 420px;
+	max-width: 480px;
 	margin: 40px auto 0 auto;
-	padding-top: 120px;
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)); 
-	border-radius: 420px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $off-white;
 	border: 2px solid $red;
+	border-radius: 20px;
 }
 
 .hero-article1 {
@@ -313,7 +314,7 @@ article {
 }
 
 .hero-article2 {
-	background-image: url("../images/critiques/aaronetchison-lg.jpg");
+	background-image: url("../images/critiques/astateofwar-lg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -321,6 +322,34 @@ article {
 
 .hero-article3 {
 	background-image: url("../images/critiques/abduzeedo-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-article4 {
+	background-image: url("../images/critiques/capradesign-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-article5 {
+	background-image: url("../images/tutorials/logodesign-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-article6 {
+	background-image: url("../images/tutorials/cssshapes-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-article7 {
+	background-image: url("../images/tutorials/frostedglass-lg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -443,19 +472,6 @@ article {
 		}
 	}
 
-	.carousel-content {
-		width: 100%;
-		min-height: 320px;
-		padding: 32px 0;
-	}
-
-	.carousel-copy {
-		max-width: 240px;
-		height: 240px;
-		margin: 24px auto 0 auto;
-		padding-top: 60px;
-		border-radius: 240px;
-	}
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
