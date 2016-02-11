@@ -54,8 +54,9 @@ nav li {
 }
 
 footer {
+	position: relative;
 	font-family: $pfont, sans-serif;
-	margin-top: 60px;
+	margin-top: 160px;
 	text-align: center;
 	color: $red;
 	padding-top: 10px;
@@ -76,6 +77,9 @@ footer {
 	}
 }
 
+.alert {
+	text-align: center;
+}
 
 .content {
 	width: 550px;
@@ -149,34 +153,33 @@ hr {
 
 /* Link Styles */
 
-a {
+a, .teaser a:visited{
 	color: $red;
 	text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, .teaser a:visited:hover{
 	color: $light-gray;
-}
-
-.teaser a:visited, .teaser a:active {
-	color: $light-gray;
-}
-
-.teaser a:visited:hover {
-	color: $red;
 }
 
 /*Button Styles*/
 
 .icon-heart {
+	cursor: pointer;
 	width: 32px;
 	height: 32px;
 	background: url("../images/icons/icon-heart.svg") no-repeat center;
 }
 
+.icon-heart:hover, .icon-heart:active {
+	background: url("../images/icons/icon-heart-active.svg") no-repeat center;
+}
+
+
 .social-group {
 	
 	.button {
+		cursor: pointer;
 		display: inline-block;
 		margin-right: 16px;
 	}
@@ -184,18 +187,21 @@ a:hover, a:focus {
 }
 
 .icon-pinterest {
+	cursor: pointer;
 	width: 32px;
 	height: 32px;
 	background: url("../images/icons/icon-pinterest.svg") no-repeat center;
 }
 
 .icon-twitter {
+	cursor: pointer;
 	width: 32px;
 	height: 32px;
 	background: url("../images/icons/icon-twitter.svg") no-repeat center;
 }
 
 .icon-facebook {
+	cursor: pointer;
 	width: 32px;
 	height: 32px;
 	background: url("../images/icons/icon-facebook.svg") no-repeat center;
@@ -325,35 +331,35 @@ article {
 .hero-article1 {
 	background-image:url("../images/critiques/creativity-lg.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 }
 
 .hero-article2 {
 	background-image: url("../images/critiques/astateofwar-lg.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 }
 
 .hero-article3 {
 	background-image: url("../images/critiques/abduzeedo-lg.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 }
 
 .hero-article4 {
 	background-image: url("../images/critiques/capradesign-lg.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 }
 
 .hero-article5 {
 	background-image: url("../images/tutorials/logodesign-lg.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 }
 
@@ -367,7 +373,7 @@ article {
 .hero-article7 {
 	background-image: url("../images/tutorials/frostedglass-lg.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 }
 
@@ -498,6 +504,10 @@ article {
 			margin-right: 0;
 			margin-bottom: 10px;
 		}
+	}
+
+	.carousel-content {
+		min-height: 480px;
 	}
 
 }
