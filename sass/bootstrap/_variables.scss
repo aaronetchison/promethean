@@ -118,7 +118,7 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
+$border-radius-base:        8px !default;
 $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
 
@@ -188,7 +188,7 @@ $btn-link-disabled-color:        $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius-base:         $border-radius-base !default;
-$btn-border-radius-large:        48px;
+$btn-border-radius-large:        8px;
 $btn-border-radius-small:        $border-radius-small !default;
 
 
