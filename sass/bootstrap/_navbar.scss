@@ -500,13 +500,14 @@
     &:hover,
     &:focus {
       background-color: $navbar-default-toggle-hover-bg;
-      border-color: $orange;
+      border-color: $light-gray;
     }
     .icon-bar {
       background-color: $navbar-default-toggle-icon-bar-bg;
       &:hover,
-      &:focus {
-        background-color: $orange;
+      &:focus,
+      &:active {
+        background-color: $light-gray;
       }
     }
   }

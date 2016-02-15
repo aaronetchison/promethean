@@ -42,6 +42,17 @@ module.exports = function(grunt) {
 	      dest: 'stylesheets/global.css'
 	  },
   },
+
+  uglify: {
+  	options: {
+      mangle: false
+    },
+    my_target: {
+      files: {
+        'js/global.min.js': ['js/*.js', 'js/bootstrap/*.js']
+      }
+    }
+  },
 	
 	watch: {
 		html: {
@@ -56,6 +67,10 @@ module.exports = function(grunt) {
 			files: ['stylesheets/*.css'],
 			tasks: ['autoprefixer']
 		},
+		uglify: {
+			files: ['js/*.js'],
+			tasks: ['uglify']
+		},
 	},
 	
   });
@@ -64,8 +79,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-htmlhint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['sass', 'autoprefixer']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'uglify']);
 
 };
