@@ -502,14 +502,17 @@
       background-color: $navbar-default-toggle-hover-bg;
       border-color: $light-gray;
     }
+    
+    &:hover .icon-bar,
+    &:focus .icon-bar,
+    &:active .icon-bar {
+      background-color: $light-gray;
+    }
+
     .icon-bar {
       background-color: $navbar-default-toggle-icon-bar-bg;
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: $light-gray;
-      }
     }
+    
   }
 
   .navbar-collapse,

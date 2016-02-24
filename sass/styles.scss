@@ -478,6 +478,7 @@ pre {
 	margin-top: 8em;
 
 	.comment-entry {
+		margin-bottom: 16px;
 		
 		input, textarea {
 			width: 100%;
@@ -541,6 +542,10 @@ pre {
 
 	}
 
+	.comment-post-reply {
+		margin-left: 64px;
+	}
+
 }
 
 /* Form Elements */
@@ -558,7 +563,7 @@ label {
 input, textarea {
 	height: 32px;
 	padding: 2px 16px;
-	border: 2px solid $red;
+	border: 1px solid $red;
 	border-radius: 8px;
 	font-family: $pfont;
 	font-size: 1.2em;
@@ -566,7 +571,7 @@ input, textarea {
 }
 
 input:focus { 
-	border: 2px solid $light-gray;
+	border: 1px solid $light-gray;
 }
 
 
